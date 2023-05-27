@@ -4,7 +4,7 @@ import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import { Navbar, Footer, Sidebar, ThemeSetting } from "./components";
-import { Assignment, Classes, Dashboard, Schedule } from "./pages";
+import { Assignment, Classes, Dashboard, Schedule, Teachers } from "./pages";
 
 import { useStateContext } from "./contexts/ContextProvider";
 import './App.css';
@@ -47,8 +47,9 @@ const App = () => {
                         <Route path='/' element={<Dashboard />} />
                         <Route path='/dashboard' element={<Dashboard />} />
                         <Route path='/classes' element={<Classes />} />
+                        <Route path='/teachers' element={<Teachers />} />
                         <Route path='/schedule' element={<Schedule />} />
-                        <Route path='/assignments' element={<Assignment />} />
+                        <Route path='/assignments' element={<Assignment />} />   
                     </Routes>
                 </div>
                 </div>
